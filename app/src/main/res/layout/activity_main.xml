@@ -18,7 +18,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/customborder"/>
 
     <TextView
         android:id="@+id/display"
@@ -51,23 +52,27 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
-                android:background="@drawable/customborder"
-                android:onClick="QuitApp"
-                app:srcCompat="@drawable/exit" />
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/customborder"
-                android:onClick="Clear"
-                app:srcCompat="@drawable/clear" />
+                android:paddingTop="10dp"
+                android:text="QUIT"
+                android:textAlignment="center"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/customborder"
+                android:paddingTop="10dp"
+                android:text="CLEAR"
+                android:textAlignment="center"
+                android:textSize="36sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -201,24 +206,27 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:background="@drawable/customborder"
                 android:paddingTop="10dp"
                 android:text="0"
                 android:textAlignment="center"
                 android:textSize="36sp" />
 
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="2"
                 android:background="@drawable/customborder"
-                android:onClick="Calculate"
-                app:srcCompat="@drawable/equal" />
+                android:paddingTop="10dp"
+                android:text="="
+                android:textAlignment="center"
+                android:textSize="36sp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -228,41 +236,49 @@
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/customborder"
-                android:onClick="appendMinus"
-                app:srcCompat="@drawable/minus" />
+                android:paddingTop="10dp"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="36sp" />
 
-            <ImageView
-                android:id="@+id/imageView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/customborder"
-                android:onClick="appendPlus"
-                app:srcCompat="@drawable/plus_final" />
+                android:paddingTop="10dp"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="36sp" />
 
-            <ImageView
-                android:id="@+id/imageView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="appendDivide"
-                app:srcCompat="@drawable/divide"
-                android:background="@drawable/customborder"/>
+                android:background="@drawable/customborder"
+                android:paddingTop="10dp"
+                android:text="*"
+                android:textAlignment="center"
+                android:textSize="36sp" />
 
-            <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="appendMultiply"
-                app:srcCompat="@drawable/multiply"
-                android:background="@drawable/customborder"/>
+                android:background="@drawable/customborder"
+                android:paddingTop="10dp"
+                android:text="/"
+                android:textAlignment="center"
+                android:textSize="36sp" />
         </LinearLayout>
 
     </LinearLayout>
